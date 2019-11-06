@@ -87,3 +87,5 @@ FLUSH PRIVILEGES
 + [取色小工具](https://colorpix.en.softonic.com/ "取色小工具")
 
 + [截图小工具](https://www.snipaste.com/ "截图小工具")
+
++ [notepad++](http://www.notepad-plus-plus.org/ "notepad++")
