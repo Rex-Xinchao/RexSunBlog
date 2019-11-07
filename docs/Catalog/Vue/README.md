@@ -67,3 +67,15 @@ export default {
     
 + $children (父组件可以通过$children获取子组件列)
     > 返回的是一个vue子组件实例数组
+    
+### $attrs & $listeners
++ attrs (继承所有的父组件属性，除props、class和style)
+    > v-bind="$attrs"可以把父组件的属性传递给子组件
++ listeners (继承所有父组件的监听事件)
+    > v-on="$listeners"可以把父组件的监听事件传递给子组件
+    
+### inheritAttrs
++ 设置为false时，所有属性（特指不是props的属性）不会绑定到html上
++ inheritAttrs并不影响class和style绑定
+
+### 暂时更新到第一个链接的第10点
