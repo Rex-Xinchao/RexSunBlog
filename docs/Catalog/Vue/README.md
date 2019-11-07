@@ -78,4 +78,49 @@ export default {
 + 设置为false时，所有属性（特指不是props的属性）不会绑定到html上
 + inheritAttrs并不影响class和style绑定
 
-### 暂时更新到第一个链接的第10点
+### EventBus
+```ecmascript 6
+// main.js
+let $eventBus = new Vue()
+Vue.prototype.$eventBus = {
+  /**
+   * @param {any} event 第一个参数是事件对象，第二个参数是接收到消息信息，可以是任意类型
+   * @method $on 事件订阅, 监听当前实例上的自定义事件。https://cn.vuejs.org/v2/api/#vm-on
+   * @method $off 取消事件订阅，移除自定义事件监听器。 https://cn.vuejs.org/v2/api/#vm-off https://github.com/vuejs/vue/issues/3399
+   * @method $emit 事件广播, 触发当前实例上的事件。 https://cn.vuejs.org/v2/api/#vm-emit
+   * @method $once 事件订阅, 监听一个自定义事件，但是只触发一次，在第一次触发之后移除监听器。 https://cn.vuejs.org/v2/api/#vm-once
+   */
+  $on(...event) {
+    $eventBus.$on(...event)
+  },
+  $off(...event) {
+    $eventBus.$off(...event)
+  },
+  $once(...event) {
+    $eventBus.$emit(...event)
+  },
+  $emit(...event) {
+    $eventBus.$emit(...event)
+  }
+}
+// 使用
+this.$eventBus.$emit('updateTags', 'hello')
+this.$eventBus.$on('updateTags', val => console.log(val) )
+this.$eventBus.$off('updateTags')
+```
+
+### Vue.observable
+使对象的属性变计算属性
+```ecmascript 6
+// store/index.js
+import Vue from 'vue'
+
+export const store = Vue.observable({ count: 0 })
+export const mutations = {
+  setCount (count) {
+    store.count = count
+  }
+}
+```
+
+### 暂时更新到第一个链接的render前
