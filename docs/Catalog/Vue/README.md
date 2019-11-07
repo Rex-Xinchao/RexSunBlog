@@ -123,4 +123,24 @@ export const mutations = {
 }
 ```
 
-### 暂时更新到第一个链接的render前
+### render
+内容相同，但是会使用不同标签的情况下
+```
+// 父组件引用子组件
+ <Dom-Set :level="1">hello world</Dom-Set>
+ 
+// 子组件
+<script>
+  export default {
+    render(h) {
+      const tag = ['div', 'p', 'strong', 'h1', 'h2', 'textarea'][this.level-1]
+      return h(tag, this.$slots.default)
+    },
+    props: {
+      level: {  type: Number,  required: true  }
+    }
+  }
+</script>
+```
+
+### 暂时更新到第一个链接的render
