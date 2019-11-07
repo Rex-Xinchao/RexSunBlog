@@ -44,6 +44,13 @@ Git
     >+ $ git branch -a (显示所有远程和本地分支，白色和绿色的表示为本地的，红色的表示为远程)
     >+ $ git fetch -p (强制更新本地所有分支)
     
+::: tip fork-rebase流程
++ 在当前仓库点击fork按钮创建私人分支
++ 拉取私人分支代码并将修改代码提交到本地仓库
++ rebase远程原型仓库的代码 git pull --rebase
++ 解决冲突并提交代码
+:::
+    
 ::: tip 注意
 安装完git一定还要初始化git指令，必须要做，否则以后会很麻烦
 + 设置全局的用户名 $ git config --global user.name "rexSun"
