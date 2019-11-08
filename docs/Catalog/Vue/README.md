@@ -22,6 +22,7 @@ export default {
 ```
 
 ### watch
+监听
 + immediate (立即初始化)
     > 申明了后立即执行handle方法，默认false<br/>
     > immediate设置为true后，会在vue实例化后执行watch的handle方法
@@ -58,6 +59,7 @@ export default {
 ```
 
 ### $root & $parent & $children
+子父组件通讯
 + $root(子组件可以通过 $root 属性访问父组件实例的属性和方法)
     > $root获取的是根父组件实例
  
@@ -69,6 +71,7 @@ export default {
     > 返回的是一个vue子组件实例数组
     
 ### $attrs & $listeners
+子父组件通讯
 + attrs (继承所有的父组件属性，除props、class和style)
     > v-bind="$attrs"可以把父组件的属性传递给子组件
 + listeners (继承所有父组件的监听事件)
@@ -79,6 +82,7 @@ export default {
 + inheritAttrs并不影响class和style绑定
 
 ### EventBus
+子父组件通讯
 ```ecmascript 6
 // main.js
 let $eventBus = new Vue()
@@ -124,7 +128,7 @@ export const mutations = {
 ```
 
 ### render
-内容相同，但是会使用不同标签的情况下
+内容相同，但是会使用不同标签的情况下，使用render
 ```
 // 父组件引用子组件
  <Dom-Set :level="1">hello world</Dom-Set>
