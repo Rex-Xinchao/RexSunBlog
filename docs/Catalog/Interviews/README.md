@@ -20,8 +20,29 @@
 + 深拷贝的实现方案：
     + obj = Object.assign({}, 目标对象)
     + obj = [...目标对象] //当前仅当目标对象只有一层
-    + obj = JSON.parse(JSON.stringify(目标对象))
+    + obj = JSON.parse(JSON.stringify(目标对象)) 缺点：会忽略undefined、symbol。不能序列化函数。不能解决循环引用的问题。
     + let obj = {} for (let key in 目标对象) { obj[key] = 目标对象[key]} 
+    + 通过递归函数实现
+    ```
+    function deepClone(target, map = new Map()) {
+        function isObj(o) {
+            return (typeof o === 'object' || typeof o === 'function') && o !== null;
+        }
+        if (isObj(target)) {
+            let cloneTarget = Array.isArray(target) ? [] : {};
+            if (map.get(target)) {
+                return map.get(target);
+            }
+            map.set(target, cloneTarget);
+            for (const key in target) {
+                cloneTarget[key] = deepClone(target[key], map);
+            }
+            return cloneTarget;
+        } else {
+            return target;
+        }
+    }
+     ```
 :::
 
 ## 首屏优化的方案
