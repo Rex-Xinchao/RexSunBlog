@@ -48,6 +48,13 @@ module.exports = {
         ]
       },
       {
+        title: 'TypeScript',
+        collapsable: true,
+        children: [
+          ['/Catalog/TypeScript/', 'TypeScript']
+        ]
+      },
+      {
         title: '网络请求',
         collapsable: true,
         children: [
