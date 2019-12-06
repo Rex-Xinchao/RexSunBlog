@@ -76,8 +76,8 @@ module.exports = {
         title: 'Vue',
         collapsable: true,
         children: [
-          ['/Catalog/Vue/', '你所不知道的Vue'],
-          ['/Catalog/Vue-Cli/', 'Vue3.0脚手架']
+          ['/Catalog/Vue/vue.md', '你所不知道的Vue'],
+          ['/Catalog/Vue/vue-cli3.md', 'Vue3.0脚手架']
         ]
       },
       {
