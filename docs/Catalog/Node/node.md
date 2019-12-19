@@ -13,3 +13,6 @@
     + 验证方式：npm config get registry 
 + 使用教程：
     + [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html "npm scripts 使用指南 -- 阮一峰")
+
+
++ https://nodejs.jakeyu.top/
