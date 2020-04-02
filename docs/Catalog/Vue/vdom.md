@@ -9,7 +9,7 @@
 ### vdom生成
 ```javascript
 const h = this.$createElement;
-const vdom = h('div', {class: 'class', title: 'title'}, [
+const vdom = h('div', {class: 'class', attrs: {title: 'title'}}, [
     h('p', {class: 'class'}, '这是P标签'),
     h('span', '这是span标签'),
 ])
