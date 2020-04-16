@@ -97,6 +97,13 @@ module.exports = {
           ['/Catalog/Unit/mocha.md', 'Mocha'],
           ['/Catalog/Unit/assertionLibrary.md', '断言库']
         ]
+      },{
+        title: '自动化',
+        collapsable: true,
+        children: [
+          ['/Catalog/Auto/docker/INSTALL', 'Docker安装'],
+          ['/Catalog/Auto/docker/', 'Docker使用说明']
+        ]
       },
       {
         title: '面试题',
