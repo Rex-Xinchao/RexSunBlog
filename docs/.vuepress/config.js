@@ -101,8 +101,8 @@ module.exports = {
         title: '自动化',
         collapsable: true,
         children: [
-          ['/Catalog/Auto/docker/INSTALL', 'Docker安装'],
-          ['/Catalog/Auto/docker/', 'Docker使用说明']
+          ['/Catalog/Auto/docker/install.md', 'Docker安装'],
+          ['/Catalog/Auto/docker/create.md', 'Docker使用说明']
         ]
       },
       {

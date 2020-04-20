@@ -10,15 +10,22 @@
 ```shell
 > docker pull ubunut:18.04
 
-18.04: Pulling from library/ubuntu
-c448d9b1e62f: Pull complete
-0277fe36251d: Pull complete
-6591defe1cd9: Pull complete
-2c321da2a3ae: Pull complete
-08d8a7c0ac3c: Pull complete
-Digest: sha256:2152a8e6c0d13634c14aef08b6cc74cbc0ad10e4293e53d2118550a52f3064d1
-Status: Downloaded newer image for ubuntu:18.04
+// 'ubunut' --> 镜像名称
+// '18.04' --> 版本号，不填默认为lasted
 ```
-+ 执行docker images 即可查看所有本地镜像
++ 查看所有本地镜像
+```shell
+docker images
+```
++ 运行容器
+```shell
+docker run -it --rm \
+    ubuntu:18.04 \
+    bash
 
-### 创建docker容器
+// '-it' --> -i(交互式操作)、-t(终端)
+// '--rm' --> 退出容器后删除容器
+// 'ubunty' --> 容器名称
+// '18.04' --> 版本号
+// 'bash' --> 命令
+```
