@@ -59,6 +59,7 @@ docker container create -p 8089:80 docker-test:1.0.0
 
 // `8089` --> 端口号
 // `docker-test:1.0.0` --> 目标镜像
+
 ```
 
 + 运行容器
@@ -68,3 +69,17 @@ docker container start xxxxx(容器id)
 ```
 
 + 打开页面查看是否成功
+
+
+### 相关命令
+
++ 获取镜像 --> docker pull [镜像名称]:[镜像版本号]
++ 列出镜像 --> docker image ls / docker image ls -a / docker image ls [镜像名称]
++ 删除镜像 --> docker rm [镜像名称]:[镜像版本号] / docker rm [镜像id]
++ 构建镜像 --> docker image build [目标目录路径] -t [镜像名称]:[镜像版本号]
+
++ 启动容器 --> docker run [容器名称]:[容器版本号] / docker run [容器id]
++ 停止容器 --> docker stop [容器名称]:[容器版本号] / docker stop [容器id]
++ 列出容器 --> docker container ls -a
++ 获取容器输出信息 --> docker container logs [容器名称]:[容器版本号] / docker container logs [容器id]
++ 进入容器 --> docker exec [容器名称]:[容器版本号] / docker exec [容器id]
