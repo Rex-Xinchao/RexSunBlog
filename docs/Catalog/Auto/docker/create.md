@@ -57,7 +57,7 @@ docker image build ./ -t docker-test:1.0.0
 ```shell
 docker container create -p 8089:80 docker-test:1.0.0
 
-// `2333` --> 端口号
+// `8089` --> 端口号
 // `docker-test:1.0.0` --> 目标镜像
 ```
 
