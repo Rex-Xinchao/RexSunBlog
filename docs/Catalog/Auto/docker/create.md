@@ -6,6 +6,7 @@
 > ++ css<br/>
 > \+ default.conf(nginx配置文件)<br/>
 > \+ Dockerfile<br/>
+> \+ .dockerignore<br/>
 ```
 // nginx配置文件
 server {
@@ -37,6 +38,19 @@ EXPOSE 8089
 
 # 运行nginx
 CMD ["nginx", "-g", "daemon off;"]
+
+\\ .dockerignore
+frontend/
+config/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
 ```
 
 + 首先进入对应目录
