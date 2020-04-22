@@ -102,8 +102,9 @@ module.exports = {
         collapsable: true,
         children: [
           ['/Catalog/Auto/docker/install.md', 'Docker安装'],
-          ['/Catalog/Auto/docker/create.md', 'Docker使用说明']
-          ['/Catalog/Auto/docker/docker.md', 'Dockerfile']
+          ['/Catalog/Auto/docker/create.md', 'Docker使用说明'],
+          ['/Catalog/Auto/docker/docker.md', 'Dockerfile'],
+          ['/Catalog/Auto/jenkins/jenkins.md', 'Jenkins使用说明']
         ]
       },
       {
