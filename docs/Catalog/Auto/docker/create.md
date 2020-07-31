@@ -87,9 +87,9 @@ docker container start xxxxx(容器id)
 
 ### 相关命令
 
-+ 获取镜像 --> docker pull [镜像名称]:[镜像版本号]
++ 获取镜像 --> docker pull [镜像名称]:[镜像版本号]  * 镜像名称不能带大写字母
 + 列出镜像 --> docker image ls / docker image ls -a / docker image ls [镜像名称]
-+ 删除镜像 --> docker rm [镜像名称]:[镜像版本号] / docker rm [镜像id]
++ 删除镜像 --> docker image rm [镜像名称]:[镜像版本号] / docker rm [镜像id]
 + 构建镜像 --> docker image build [目标目录路径] -t [镜像名称]:[镜像版本号]
 
 + 启动容器 --> docker run [容器名称]:[容器版本号] / docker run [容器id]
