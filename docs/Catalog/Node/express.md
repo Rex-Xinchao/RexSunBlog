@@ -20,7 +20,7 @@ express '项目名称'
 express每次更新代码都需要重新运行，安装supervisor用于热更新
 ```
 // 全局安装
-npm -g install supervisornpm -g install supervisor
+npm -g install supervisor
 // 运行配置
 supervisor bin/www
 ```

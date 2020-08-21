@@ -87,7 +87,8 @@ module.exports = {
         children: [
           ['/Catalog/Node/node.md', 'node环境配置'],
           ['/Catalog/Node/nvm.md', 'nvm使用说明'],
-          ['/Catalog/Node/express.md', 'node接口开发']
+          ['/Catalog/Node/express.md', 'node接口开发'],
+          ['/Catalog/Node/publish.md', 'node程序部署']
         ]
       },
       {
@@ -105,6 +106,13 @@ module.exports = {
           ['/Catalog/Auto/docker/create.md', 'Docker使用说明'],
           ['/Catalog/Auto/docker/docker.md', 'Dockerfile'],
           ['/Catalog/Auto/jenkins/jenkins.md', 'Jenkins使用说明']
+        ]
+      },
+      {
+        title: '服务器',
+        collapsable: true,
+        children: [
+          ['/Catalog/Server/init.md', '初始化']
         ]
       },
       {
