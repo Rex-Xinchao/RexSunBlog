@@ -2,10 +2,10 @@
 ```shell
 # 先把项目复制到home/www 文件夹下
 # cd 进入文件夹
-# 全局安装 supervisor 和 pm2
+# 全局安装pm2
+npm install pm2 -g
 # 加入环境变量 
 whereis pm2 
-whereis supervisor
 # 安装依赖
 npm install
 # 运行程序
