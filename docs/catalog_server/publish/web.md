@@ -30,6 +30,9 @@ docker ps -a
 
 ## 启动容器
 docker container start xxxxx(容器id)
+
+## 进入容器
+docker exec -it xxxxx(容器id) /bin/sh
 ```
 
 - 文件展示
