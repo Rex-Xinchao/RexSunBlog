@@ -22,10 +22,9 @@ module.exports = {
       {
         title: '基础',
         children: [
-          ['/catalog_base/html/', 'Html-DOM操作'],
-          ['/catalog_base/html/h5.md', 'Html-H5'],
-          ['/catalog_base/css/', 'Css-动画'],
-          ['/catalog_base/css/elastic.md', 'Css-弹性布局'],
+          ['/catalog_base/html/', 'Html'],
+          ['/catalog_base/css/', 'Css3'],
+          ['/catalog_base/css/elastic', '弹性布局'],
           ['/catalog_base/algorithm/', '算法']
         ]
       }

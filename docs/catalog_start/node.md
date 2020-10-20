@@ -1,4 +1,6 @@
-## Node
+[[toc]]
+
+### Node
 
 - 安装：[Node](http://nodejs.cn/download/ 'Node 官网')
   / 指南：[npm scripts](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
@@ -18,7 +20,7 @@
 - 验证方式：npm config get registry
   :::
 
-## Nvm
+### Nvm
 
 - 安装：[Nvm](https://github.com/coreybutler/nvm-windows/releases)（用于用户管理和控制多个 nodeJs 的版本）
 
