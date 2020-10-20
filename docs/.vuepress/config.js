@@ -51,6 +51,20 @@ module.exports = {
           ['/catalog_platform/electorn/', '桌面应用'],
           ['/catalog_platform/wechat/', '微信小程序']
         ]
+      },
+      {
+        title: '单元测试',
+        children: [
+          ['/catalog_unit/mocha.md', 'Mocha'],
+          ['/catalog_unit/assertionLibrary.md', '断言库']
+        ]
+      },
+      {
+        title: '面试总结',
+        children: [
+          ['/catalog_self/interview/', '面试汇总'],
+          ['/catalog_self/problem/2019.md', '2019问题小结']
+        ]
       }
     ]
   }
