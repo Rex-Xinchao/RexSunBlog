@@ -49,7 +49,8 @@ module.exports = {
         title: '三方平台开发',
         children: [
           ['/catalog_platform/electorn/', '桌面应用'],
-          ['/catalog_platform/wechat/', '微信小程序']
+          ['/catalog_platform/wechat/h5.md', '微信分享功能'],
+          ['/catalog_platform/wechat/', '微信小程序'],
         ]
       },
       {
