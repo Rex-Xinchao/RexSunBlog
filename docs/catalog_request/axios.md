@@ -1,19 +1,15 @@
-[官网](http://www.axios-js.com/zh-cn/docs/ "axios官网")
+### 兼容性
 
-## 兼容性
-![alt text](../../static/image/axios.png "axios兼容性")
+![alt text](./images/axios.png 'axios兼容性')
 
-## axios安装
-+ 使用npm
+### axios 安装
+
 ```
 npm install axios -s
 ```
-+ 使用cdn
-```
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-```
 
-## axios常用配置项
+### axios 常用配置项
+
 ```
 {
    // `url` 是用于请求的服务器 URL
@@ -63,7 +59,8 @@ npm install axios -s
 }
 ```
 
-## axios响应结构
+### axios 响应结构
+
 ```
 {
   // `data` 由服务器提供的响应
@@ -88,7 +85,8 @@ npm install axios -s
 }
 ```
 
-## axios配置化
+### axios 配置化
+
 ```
 import axios from 'axios'
 import router from './router'
@@ -226,7 +224,8 @@ export default request
 
 ```
 
-## 全局引入
+### 全局引入
+
 ```
 // 在 main.js文件中引入
 import request from './request'

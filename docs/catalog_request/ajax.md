@@ -1,4 +1,4 @@
-## 原生Ajax封装
+### 原生Ajax封装
 ```
 function Ajax (options) {
   // 新建一个对象，用途接受XHR对象

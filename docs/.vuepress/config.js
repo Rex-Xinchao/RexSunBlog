@@ -16,7 +16,7 @@ module.exports = {
           ['/catalog_start/tool.md', '开发工具'],
           ['/catalog_start/mysql.md', 'Mysql安装'],
           ['/catalog_start/node.md', 'Node安装'],
-          ['/catalog_start/git.md', 'Git安装'],
+          ['/catalog_start/git.md', 'Git安装']
         ]
       },
       {
@@ -26,6 +26,14 @@ module.exports = {
           ['/catalog_base/css/', 'Css3'],
           ['/catalog_base/css/elastic', '弹性布局'],
           ['/catalog_base/algorithm/', '算法']
+        ]
+      },
+      {
+        title: '网络请求',
+        children: [
+          ['/catalog_request/ajax', 'ajax'],
+          ['/catalog_request/axios', 'axios'],
+          ['/catalog_request/fetch', 'fetch']
         ]
       }
     ]

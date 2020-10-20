@@ -1,40 +1,43 @@
-## 兼容性
-![alt text](../../static/image/fetch.png "Fetch兼容性")
+### 兼容性
 
-## fetch常用配置项
-+ method: 请求使用的方法，如 GET、POST。
-+ headers: 请求的头信息。
-+ body: 请求的 body 信息。
-::: tip 
- GET 或 HEAD 方法的请求不能包含 body 信息。
-::: 
-+ mode: 请求的模式。
-::: tip 
-cors、 no-cors 或者 same-origin
-::: 
-+ credentials: 请求的 credentials。
-::: tip
-+ omit、same-origin 或者 include
-+ 为了在当前域名内自动发送 cookie ， 必须提供这个选项
-:::
-+ cache:  请求的 cache 模式。
-::: tip
-default 、 no-store 、 reload 、 no-cache 、 force-cache 或者 only-if-cached
-:::
-+ redirect: 可用的 redirect 模式。
-::: tip
-+ follow (自动重定向)
-+ error (如果产生重定向将自动终止并且抛出一个错误)
-+ manual (手动处理重定向) 
-:::
-+ referrer: 一个 USVString。
-::: tip
-+ no-referrer、client或一个 URL。
-+ 默认是 client。
-:::
-+ referrerPolicy: 指定了HTTP头部referer字段的值。
+![alt text](./images/fetch.png 'Fetch兼容性')
 
-## fetch配置化
+### fetch 常用配置项
+
+- method: 请求使用的方法，如 GET、POST。
+- headers: 请求的头信息。
+- body: 请求的 body 信息。
+  ::: tip
+  GET 或 HEAD 方法的请求不能包含 body 信息。
+  :::
+- mode: 请求的模式。
+  ::: tip
+  cors、 no-cors 或者 same-origin
+  :::
+- credentials: 请求的 credentials。
+  ::: tip
+- omit、same-origin 或者 include
+- 为了在当前域名内自动发送 cookie ， 必须提供这个选项
+  :::
+- cache: 请求的 cache 模式。
+  ::: tip
+  default 、 no-store 、 reload 、 no-cache 、 force-cache 或者 only-if-cached
+  :::
+- redirect: 可用的 redirect 模式。
+  ::: tip
+- follow (自动重定向)
+- error (如果产生重定向将自动终止并且抛出一个错误)
+- manual (手动处理重定向)
+  :::
+- referrer: 一个 USVString。
+  ::: tip
+- no-referrer、client 或一个 URL。
+- 默认是 client。
+  :::
+- referrerPolicy: 指定了 HTTP 头部 referer 字段的值。
+
+### fetch 配置化
+
 ```
 import store from './store'
 import router from './router'
