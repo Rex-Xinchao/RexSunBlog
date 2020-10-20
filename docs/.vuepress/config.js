@@ -25,7 +25,8 @@ module.exports = {
           ['/catalog_base/html/', 'Html'],
           ['/catalog_base/css/', 'Css3'],
           ['/catalog_base/css/elastic', '弹性布局'],
-          ['/catalog_base/algorithm/', '算法']
+          ['/catalog_base/algorithm/', '算法'],
+          ['/catalog_base/chart/', '可视化图表']
         ]
       },
       {
@@ -34,6 +35,14 @@ module.exports = {
           ['/catalog_request/ajax', 'ajax'],
           ['/catalog_request/axios', 'axios'],
           ['/catalog_request/fetch', 'fetch']
+        ]
+      },
+      {
+        title: 'Vue',
+        children: [
+          ['/catalog_vue/vue/', 'vue'],
+          ['/catalog_vue/vue/vue-cli.md', 'vue-cli'],
+          ['/catalog_vue/typescript/', 'typescript']
         ]
       }
     ]

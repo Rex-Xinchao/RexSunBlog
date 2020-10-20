@@ -1,3 +1,5 @@
+[[toc]]
+
 ### 兼容性
 
 ![alt text](./images/fetch.png 'Fetch兼容性')
