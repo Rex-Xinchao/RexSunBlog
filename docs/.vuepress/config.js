@@ -60,6 +60,17 @@ module.exports = {
         ]
       },
       {
+        title: '服务器',
+        children: [
+          ['/catalog_server/install/docker.md', 'docker'],
+          ['/catalog_server/install/gitlab.md', 'gitlab'],
+          ['/catalog_server/install/jenkins.md', 'jenkins'],
+          ['/catalog_server/install/nginx.md', 'nginx'],
+          ['/catalog_server/publish/node.md', '发布Node程序'],
+          ['/catalog_server/publish/web.md', '发布Web程序']
+        ]
+      },
+      {
         title: '面试总结',
         children: [
           ['/catalog_self/interview/', '面试汇总'],
