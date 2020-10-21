@@ -11,7 +11,8 @@ docker serch jenkins
 ## 官方推荐镜像
 docker pull jenkinsci/blueocean
 ## 标准镜像
-docker pull jenkins/jenkins
+docker pull jenkins/jenkins:lts
+## lts 长期支援的稳定版本
 ```
 
 - 运行镜像
@@ -20,15 +21,15 @@ docker pull jenkins/jenkins
 docker run \
     --name jenkins-blueocean \
     -d \
-    -p 8081:8080 \
-    -p 50001:50000 \
+    -p 8080:8080 \
+    -p 50000:50000 \
     jenkinsci/blueocean
 
 ## 或者
 docker run \
   --name jenkins-blueocean \
   -d \
-  -p 8081:8080 \
+  -p 8080:8080 \
   -p 50000:50000 \
   -v jenkins:/var/jenkins_home \
   -v /etc/localtime:/etc/localtime \
