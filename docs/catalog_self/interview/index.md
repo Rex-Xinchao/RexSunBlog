@@ -124,5 +124,5 @@ vue 的数据双向绑定是通过数据劫持和发布-订阅者功能来实现
 ### 冒泡排序
 
 ::: tip  
-[算法](../JavaScript/algorithm.md#冒泡排序 '算法')
+[算法](../../catalog_base/algorithm/README.md#冒泡排序 '算法')
 :::
