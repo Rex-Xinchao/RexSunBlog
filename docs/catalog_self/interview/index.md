@@ -87,12 +87,12 @@ vue 的数据双向绑定是通过数据劫持和发布-订阅者功能来实现
 
 ::: tip
 
-- filter 支持函数{{ message | filterA('arg1', arg2)}}
-  - filterA 被定义为接收三个参数的过滤器函数。
+- filter 支持函数  message | 方法 A('arg1', arg2)
+  - 方法 A 被定义为接收三个参数的过滤器函数。
   - message 的值作为第一个参数
   - 表达式 'arg1' 作为第二个参数
   - 表达式 arg2 的值作为第三个参数。
-- filter 支持多次过滤{{ message | filterA | filterB }} + message 作为 filterA 的参数 + filterA 的结果作为 filterB 的参数
+- filter 支持多次过滤
   :::
 
 ### 严格模式
