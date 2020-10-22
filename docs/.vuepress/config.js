@@ -63,12 +63,12 @@ module.exports = {
       {
         title: '服务器',
         children: [
-          ['/catalog_server/install/docker.md', 'docker'],
+          ['/catalog_server/install/dockerServer.md', 'docker'],
           ['/catalog_server/install/gitlabServer.md', 'gitlab'],
-          ['/catalog_server/install/jenkins.md', 'jenkins'],
-          ['/catalog_server/install/nginx.md', 'nginx'],
-          ['/catalog_server/publish/node.md', '发布Node程序'],
-          ['/catalog_server/publish/web.md', '发布Web程序']
+          ['/catalog_server/install/jenkinsServer.md', 'jenkins'],
+          ['/catalog_server/install/nginxServer.md', 'nginx'],
+          ['/catalog_server/publish/nodeServer.md', '发布Node程序'],
+          ['/catalog_server/publish/webServer.md', '发布Web程序']
         ]
       },
       {
