@@ -16,4 +16,4 @@
   > npm install highcharts --save
   > ```
 
-- [demo 项目地址](https://github.com/Rex-Xinchao/chart-demo 'demo地址')
+- [demo 项目地址](https://github.com/Rex-Xinchao/Demo-Sum 'demo地址')
