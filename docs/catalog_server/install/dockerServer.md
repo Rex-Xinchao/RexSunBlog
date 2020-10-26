@@ -47,15 +47,22 @@ sudo apt-get install docker docker-ce 或者 sudo apt-get install docker docker-
 ### docker 命令
 
 - 获取镜像 --> docker pull [镜像名称]:[镜像版本号] \* 镜像名称不能带大写字母
-- 列出镜像 --> docker image ls / docker image ls -a / docker image ls [镜像名称]
-- 删除镜像 --> docker image rm [镜像名称]:[镜像版本号] / docker rm [镜像 id]
+- 列出镜像 --> docker images / docler images ls
+- 删除镜像 --> docker rm [镜像 id]
 - 构建镜像 --> docker image build [目标目录路径] -t [镜像名称]:[镜像版本号]
 
-- 启动容器 --> docker run [容器名称]:[容器版本号] / docker run [容器 id]
-- 停止容器 --> docker stop [容器名称]:[容器版本号] / docker stop [容器 id]
+- 创建容器 --> docker container create [容器名称]:[容器版本号]
 - 列出容器 --> docker container ls -a / docker ps -a
-- 获取容器输出信息 --> docker container logs [容器名称]:[容器版本号] / docker container logs [容器 id]
-- 进入容器 --> docker exec [容器名称]:[容器版本号] / docker exec [容器 id]
+- 停止容器 --> docker container stop [容器 id]
+- 启动容器 --> docker conatiner start [容器 id]
+- 获取容器输出信息 --> docker container logs [容器 id]
+- 进入容器 --> docker exec [容器 id]
+
+- 批量删除镜像 --> docker rmi \`docker images -q\`
+- 按条件(名称中包换 demo)批量删除镜像 --> docker rmi \`docker images -f "reference=demo" -q\`
+- 批量停止容器 --> docker container stop \`docker ps -a -q\`
+- 批量删除容器 --> docker container rm \`docker ps -a -q\`
+- 按条件(名称中包换 demo)批量删除容器 --> docker container rm \`docker ps -f "name=demo" -a -q\`
 
 ### dockerfile 指令详解
 
