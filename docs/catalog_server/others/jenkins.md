@@ -32,4 +32,6 @@
   >     npm run server
   > 2、选择ssh服务的操作
   >     选择服务器
-  >     其他操作
+  >     填写 Source files 例如：docs/.vuepress/dist/**/*  -- **/* 代表dist文件夹下所有文件
+  >     选填写 Remove prefixs 例如：docs/.vuepress/  -- 去除docs/.vuepress/文件夹
+  >     Remote directory  -- 默认不填写 就是配置中的上传文件夹
