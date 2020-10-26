@@ -12,7 +12,6 @@
 mysql -uroot -p
 USE mysql
 
-// mypassword改为你的服务器登录密码
 // psd替换为你的登录密码
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'psd'
 

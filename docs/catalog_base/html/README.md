@@ -3,7 +3,7 @@
 ### Dom 操作
 
 - 获取 dom 节点
-  | 说明 | 获取所有的节点类型 | 只会获取到元素节点类型 |
+  | 说明 | 获取所有的节点类型 | 只获取到元素节点类型 |
   | :------------- |:-------------| :-----|
   | 所有子节点 | Dom.childNodes| Dom.children |
   | 第一个子节点 | Dom.firstChild | Dom.firstElementChild |
@@ -100,20 +100,21 @@ ul.parentElement.insertBefore(ul.cloneNode(true), ul.nextElementSibling)
   > - ondrop：在容器中，释放拖拉时触发（要在 ondragover 清除默认事件，不然会不生效）
 
 - 文件读取
+
   > fileReader 方法:
   >
   > - readAsBinaryString(file)将文件读取为二进制编码
   > - readAsText(file,[encoding])：将文件读取为文本
   > - readAsDataURL(file)：将文件读取为 DataURL
 
-> fileReader 的状态监听(读取成功失败结果都在 this.result 里面)
->
-> - onabort：中断
-> - onerror：出错
-> - onloadstart：开始
-> - onprogress：正在读取
-> - onload：成功读取
-> - onloadend：读取完成，无论成功失败
+  > fileReader 的状态监听(读取成功失败结果都在 this.result 里面)
+  >
+  > - onabort：中断
+  > - onerror：出错
+  > - onloadstart：开始
+  > - onprogress：正在读取
+  > - onload：成功读取
+  > - onloadend：读取完成，无论成功失败
 
 ```javascript
 const reader = new FileReader()
