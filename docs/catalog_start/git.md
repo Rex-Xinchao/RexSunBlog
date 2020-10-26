@@ -24,7 +24,7 @@
 - 设置的用户名和邮箱是 git 提交时显示的名称和联系方式，和 github 和账号无关
   :::
 
-``` git
+```git
 # git-rebase 流程
 # 在当前仓库点击 fork 按钮创建私人分支
 git clone fork地址
@@ -35,5 +35,5 @@ git remote -v
 git fetch upstream
 git rebase upstream/master
 # 解决冲突并提交代码
-git push orign master 
+git push orign master
 ```
