@@ -1,4 +1,4 @@
-### docker 发布 node 程序
+### docker 发布 node 服务
 
 - 准备文件
   Dockerfile 文件 && 程序代码

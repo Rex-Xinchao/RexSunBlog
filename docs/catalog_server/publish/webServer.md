@@ -1,11 +1,12 @@
-### docker 发布 web 程序
+### docker 发布 web 服务
 
 - 准备文件
   Dockerfile 文件 && 程序代码 && nginx.conf
   :::tip 注意
-    - 因为要支持https和域名的缘故，别忘了配置ssl协议
-    - nginx.conf的用户指定nginx (useradd nginx 要不要执行这个命令手动添加用户，待确认)
-  :::
+
+  - 因为要支持 https 和域名的缘故，别忘了配置 ssl 协议
+  - nginx.conf 的用户指定 nginx (useradd nginx 要不要执行这个命令手动添加用户，待确认)
+    :::
 
 - 进入服务器目录并生成镜像
 
@@ -73,7 +74,7 @@ http {
 
 	include /etc/nginx/mime.types;
 	default_type application/octet-stream;
-	
+
 	server {
         listen 443 ssl;
         server_name rexsun.site www.rexsun.site;
@@ -84,36 +85,36 @@ http {
 		ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 		ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
 		ssl_prefer_server_ciphers on;
-		
+
 		#add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 		#add_header X-Frame-Options DENY;
 		#add_header X-Content-Type-Options nosniff;
 		#add_header X-Xss-Protection 1;
-		
+
 		location /api/ {
             proxy_pass http://121.36.201.82:3000/;
 			proxy_set_header Host $host;
 			proxy_set_header X-Real-IP $remote_addr;
 			proxy_set_header X-Forwarded-For $remote_addr;
         }
-		
+
 		location / {
             root   /usr/share/nginx/html;
             index  index.html;
         }
        }
-		
+
 	server {
         listen 80;
         server_name rexsun.site www.rexsun.site;
-		
+
 		location /api/ {
             proxy_pass http://121.36.201.82:3000/;
 			proxy_set_header Host $host;
 			proxy_set_header X-Real-IP $remote_addr;
 			proxy_set_header X-Forwarded-For $remote_addr;
         }
-		
+
 		location / {
             root   /usr/share/nginx/html;
             index  index.html;

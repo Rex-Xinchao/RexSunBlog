@@ -27,7 +27,7 @@ module.exports = {
           ['/catalog_base/css/elastic', '弹性布局'],
           ['/catalog_base/algorithm/', '算法'],
           ['/catalog_base/chart/', '可视化图表'],
-          ['/catalog_base/node/', 'NodeExpress'],
+          ['/catalog_base/node/', 'NodeExpress']
         ]
       },
       {
@@ -51,7 +51,7 @@ module.exports = {
         children: [
           ['/catalog_platform/electorn/', '桌面应用'],
           ['/catalog_platform/wechat/h5.md', '微信分享功能'],
-          ['/catalog_platform/wechat/', '微信小程序'],
+          ['/catalog_platform/wechat/', '微信小程序']
         ]
       },
       {
@@ -64,12 +64,12 @@ module.exports = {
       {
         title: '服务器',
         children: [
-          ['/catalog_server/install/dockerServer.md', 'docker'],
-          ['/catalog_server/install/gitlabServer.md', 'gitlab'],
-          ['/catalog_server/install/jenkinsServer.md', 'jenkins'],
-          ['/catalog_server/install/nginxServer.md', 'nginx'],
-          ['/catalog_server/publish/nodeServer.md', '发布Node程序'],
-          ['/catalog_server/publish/webServer.md', '发布Web程序']
+          ['/catalog_server/install/gitlabServer.md', '安装gitlab'],
+          ['/catalog_server/install/nginxServer.md', '安装nginx'],
+          ['/catalog_server/install/dockerServer.md', '安装docker'],
+          ['/catalog_server/publish/nodeServer.md', '发布NodeServer'],
+          ['/catalog_server/publish/webServer.md', '发布WebServer'],
+          ['/catalog_server/publish/jenkinsServer.md', 'jenkins自动化发布']
         ]
       },
       {

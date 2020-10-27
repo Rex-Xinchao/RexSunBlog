@@ -64,7 +64,7 @@ docker run \
   >   npm run build
   > ```
   >
-  > 7、构建：选择上传服务器的文件<br/>
+  > 7、构建：选择 Send files execute commands over SSH<br/>
   >
   > ```
   > Name:服务器名称
