@@ -121,3 +121,20 @@ http {
     }
 }
 ```
+
+- nginx 相关 shell 命令
+
+```shell
+nginx  #启动Nginx
+nginx -c /etc/nginx/nginx.conf  #启动Nginx
+nginx -t  #测试配置文件是否有语法错误
+nginx -s reopen  #重启Nginx
+nginx -s reload  #重新加载Nginx配置文件，然后以优雅的方式重启Nginx
+nginx -s stop  #强制停止Nginx服务
+nginx -s quit  #优雅地停止Nginx服务（即处理完所有请求后再停止服务）
+
+ps -ef | grep nginx  #查看Nginx进程号
+kill -QUIT 主进程号  #从容停止Nginx
+kill -TERM 主进程号  #快速停止Nginx
+pkill -9 nginx  #强制停止Nginx
+```
