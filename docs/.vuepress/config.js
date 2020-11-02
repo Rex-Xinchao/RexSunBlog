@@ -27,7 +27,8 @@ module.exports = {
           ['/catalog_base/css/elastic', '弹性布局'],
           ['/catalog_base/algorithm/', '算法'],
           ['/catalog_base/chart/', '可视化图表'],
-          ['/catalog_base/node/', 'NodeExpress']
+          ['/catalog_base/node/', 'NodeExpress'],
+          ['/catalog_base/wheels/', '轮子库']
         ]
       },
       {

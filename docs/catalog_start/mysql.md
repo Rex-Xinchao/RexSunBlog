@@ -8,15 +8,28 @@
 需要进行如下操作:<br/>
 
 ```
+# docker安装指令
+// psd替换为你的登录密码
+docker run -itd --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=psd mysql
+```
+
+```
 // 进入sql服务器
 mysql -uroot -p
-USE mysql
+
+// 更改加密方式
+ALTER USER 'root'@'%' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;
 
 // psd替换为你的登录密码
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'psd'
+// % 为所有ip均可访问; 改为localhost 为仅本机访问;
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'psd';
 
 //刷新
-FLUSH PRIVILEGES
+FLUSH PRIVILEGES;
+
+#添加远程登录用户
+CREATE USER 'rexsun'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'rexsun'@'%';
 ```
 
 :::
